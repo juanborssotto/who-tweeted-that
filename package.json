@@ -1,0 +1,29 @@
+{
+  "name": "who-tweeted-that",
+  "version": "1.0.0",
+  "description": "Guess who of your friends tweeted that!",
+  "main": "server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "make": "npm install"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "pug": "^2.0.3",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "keywords": [
+    "twitter",
+    "nodejs",
+    "api"
+  ],
+  "author": "Borssotto Juan Cruz",
+  "license": "ISC"
+}

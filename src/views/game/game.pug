@@ -1,0 +1,16 @@
+html
+  include ../headers/main.pug
+  include ../headers/game.pug
+  body
+    p(id="whoTweetedLbl") Who tweeted:
+    div(id='friendsContainer', class="container")
+      p(id="tweetLbl") "#{tweet}"
+      div(id='friendsRow', class="row")
+        each friend, index in friends
+          div(class="col-4 col-sm-4 col-md-4 col-lg-4")
+            div(class="friendDiv col-11 col-sm-11 col-md-11 col-lg-11", userId=friend.getId(), onclick="sendAnswer(this, \""+ friend.getId() +"\")")
+              img(src=friend.getImageUrl(), class="friendImage")
+              p(class="friendScreenName") #{friend.getScreenName()}
+              p(class="friendUsername") @#{friend.getUsername()}
+              div(class="col-1 col-sm-1 col-md-1 col-lg-1")
+    div(id="btnWrapper")

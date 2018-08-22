@@ -1,0 +1,81 @@
+body {
+  background-color: #0084b4;
+}
+
+#whoTweetedLbl {
+  font-size: 7vh;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+#tweetLbl {
+  text-align: center;
+  font-size: 4vh;
+  font-weight: 300;
+  color: white;
+}
+
+#friendsContainer {
+  margin-top: 0;
+}
+
+.friendDiv {
+  margin-top: 12vh;
+  background-color: white;
+  height: 20vh;
+  border: solid 2px black;
+  border-radius: 20px;
+}
+
+.friendScreenName {
+  margin-left: 50%;
+  margin-top: 23%;
+  margin-bottom: 0px;
+  font-size: 100%;
+}
+
+.friendUsername {
+  margin-left: 50%;
+  font-weight: 200;
+}
+
+.friendImage {
+  margin-top: 12%;
+  float: left;
+  height: 60%;
+  border-radius: 50%;
+}
+
+#btnWrapper {
+  margin-top: 15vh;
+  text-align: center;
+}
+
+#nextQuestionBtn {
+  height: 10vh;
+  font-size: 5vh;
+  width: 40%;
+  background-color: #ffffff;
+  border: solid 2px black;
+}
+
+@keyframes correctAnsAnimation {
+    from {background-color: white;}
+    to {background-color: green;}
+}
+
+@keyframes incorrectAnsAnimation {
+    from {background-color: white;}
+    to {background-color: red;}
+}
+
+.correctAnswerAnimation {
+  animation-name: correctAnsAnimation;
+  animation-duration: 1.5s;
+  background-color: green;
+}
+
+.incorrectAnswerAnimation {
+  animation-name: incorrectAnsAnimation;
+  animation-duration: 1.5s;
+}

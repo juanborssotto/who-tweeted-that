@@ -1,0 +1,5 @@
+each user in users
+  a(href="/game/user/" + user.getId(), class="list-group-item list-group-item-action matchedUsersContainer")
+    img(class="twitterMatchImg", src= user.getImageUrl())
+    p(class="twitterMatchScreenName") #{user.getScreenName()}
+    p(class="twitterMatchUsername") @#{user.getUsername()}

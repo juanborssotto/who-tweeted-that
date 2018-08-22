@@ -1,0 +1,8 @@
+html
+  include ../headers/main.pug
+  include ../headers/login.pug
+  body
+    div(id="iSearchTwitterMatchesDiv")
+      p(id="iPageTitleLbl") Who tweeted that!?
+      input(id="iSearchTwitterMatchesInput", placeholder="#usernamehere")
+      div(id="iSearchTwitterMatchesList", class="list-group")

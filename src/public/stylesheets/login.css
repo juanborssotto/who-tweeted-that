@@ -1,0 +1,44 @@
+body {
+  background-color: #0084b4;
+}
+
+#iPageTitleLbl {
+  font-size: 10vh;
+  text-align: center;
+}
+
+#iSearchTwitterMatchesDiv {
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#iSearchTwitterMatchesInput {
+  width: 100%;
+  height: 7vh;
+  font-size: 4vh;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.matchedUsersContainer {
+  height: 12vh;
+}
+
+.twitterMatchScreenName {
+  margin-left: 13%;
+  font-size: 3vh;
+  margin-bottom: 0px;
+}
+
+.twitterMatchUsername {
+  margin-left: 13%;
+  font-size: 2vh;
+  font-weight: 150;
+}
+
+.twitterMatchImg {
+  width: 10%;
+  border-radius: 10px;
+  float: left;
+}
